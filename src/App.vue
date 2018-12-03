@@ -1,25 +1,48 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 <style lang="stylus">
+
 #app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
+  /*font-family 'Avenir', Helvetica, Arial, sans-serif*/
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   text-align center
-  color #2c3e50
-
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
+  width 100%
+  height 100%
+body,html
+  margin 0
+  padding 0
+  height 100%
+input[type=button], input[type=submit], input[type=file], button
+  -webkit-appearance: none;
+a
+  display block
+  text-decoration: none
+  color #815d4b
+.img-response
+  max-width 100%
+  height auto
+  display inline-block
+.input
+  margin:0;
+  padding:0;
+.vue-toast-demo .tips-container .text
+  font-size: 0.4rem !important;
+  margin: 0;
+.vue-toast-demo .tips-container
+  width 80% !important
+  height 1.5rem !important
+  line-height 1.5rem !important
+.clear:after
+  display block
+  content ' '
+  height 0px
+  clear both
 </style>
+
+<script>
+
+</script>

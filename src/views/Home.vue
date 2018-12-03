@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="page">
+        <HelloWorld ></HelloWorld>
+        <bottom-bar></bottom-bar>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-
+import BottomBar from '@/components/BottomBar.vue'
+import Flexable from '../assets/flexable.min.js'
 export default {
   name: 'home',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+      BottomBar
+  },
+    data(){
+      return {
+          show:true,
+      }
+    }
 }
 </script>
+
+<style lang="stylus" scoped>
+    .page
+     width 100%
+     height 100%
+</style>
